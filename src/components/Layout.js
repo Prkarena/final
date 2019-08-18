@@ -32,8 +32,6 @@ export default ({ children, meta, title }) => {
                 frontmatter {
                     section1
                     section2
-                    title
-                    subtitle
                     phone
                     email
                     address

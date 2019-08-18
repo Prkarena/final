@@ -6,8 +6,6 @@ import Content from './Content'
 import './PageHeader.css'
 
 const PageHeader = ({
-  title,
-  subtitle,
   backgroundImage,
   large,
   className = ''
@@ -20,23 +18,20 @@ const PageHeader = ({
           background
           resolutions="large"
           src={backgroundImage}
-          alt={title}
+          alt='header'
           size="cover"
         />
       )}
       <div className="container relative">
-        <h1 className="PageHeader--Title">{title}</h1>
+        <h1 className="PageHeader--Title"></h1>
         {subtitle && (
-          <Content className="PageHeader--Subtitle" src={subtitle} />
+          <Content className="PageHeader--Subtitle" src={null} />
         )}
       </div>
     </div>
   )
 }
 
-PageHeader.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string
-}
+
 
 export default PageHeader
