@@ -76,7 +76,7 @@ export default class Gallery extends Component {
       <Fragment>
         {images &&
           images.length > 0 && (
-            <div className="container">
+            <div className="container-fluid">
                 <div className='row Gallery' >
               {images.map((image, index) => (
               

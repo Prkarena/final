@@ -5,7 +5,7 @@ import PageHeader from '../components/PageHeader'
 import Content from '../components/Content.js'
 import Layout from '../components/Layout.js'
 import BackgroundVideo from '../components/BackgroundVideo'
-import Gallery from '../components/Gallery'
+import ProductCard from '../components/ProductCard/ProductCard'
 import Popup from '../components/Popup'
 // Export Template for use in CMS preview
 export const QualitiesPageTemplate = ({
@@ -30,8 +30,6 @@ export const QualitiesPageTemplate = ({
       backgroundImage={featuredImage}
     />
 
- 
-
     <section className="section">
       <div className="container">
         <Content source={section1} />
@@ -40,28 +38,14 @@ export const QualitiesPageTemplate = ({
 
     <section className="section">
       <div className="container">
-        <h2>Our gallery : Tap to see the full view</h2>
-        <Gallery images={gallery} />
+        <h2>Products : Tap to see detailes</h2>
+        <ProductCard images={gallery} />
       </div>
     </section>
 
     <section className="section">
       <div className="container">
         <Content source={section2} />
-      </div>
-    </section>
-
-    <section className="BackgroundVideo-section section">
-      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
-        {video && <source src={video} type="video/mp4" />}
-      </BackgroundVideo>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <Popup>
-          <Content source={section1} />
-        </Popup>
       </div>
     </section>
   </main>

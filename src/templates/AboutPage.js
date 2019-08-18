@@ -38,8 +38,8 @@ export const AboutPageTemplate = ({
     </section>
 
     <section className="section">
-      <div className="container">
-        <h2>Our gallery component</h2>
+      <div className="container-fluid">
+        <h2></h2>
         <Gallery images={gallery} />
       </div>
     </section>
@@ -50,25 +50,6 @@ export const AboutPageTemplate = ({
       </div>
     </section>
 
-    <section className="BackgroundVideo-section section">
-      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
-        {video && <source src={video} type="video/mp4" />}
-      </BackgroundVideo>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <Accordion items={accordion} />
-      </div>
-    </section>
-
-    <section className="section">
-      <div className="container">
-        <Popup>
-          <Content source={section1} />
-        </Popup>
-      </div>
-    </section>
   </main>
 )
 

@@ -72,8 +72,8 @@ export default ({data}) => (
      <div className="footer-bottom">
        <div className="row">
          <div className="col-lg-12 col-md-12 col-sm-12">
-         © Copyright {new Date().getFullYear()} All rights reserved. Crafted by{' '}
-          Kpinfoway
+         © Copyright {new Date().getFullYear()} All rights reserved by{' '}
+          BRIOTA PAPER LLP
          </div>
        </div>
      </div>
