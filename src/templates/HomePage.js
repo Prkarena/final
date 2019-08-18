@@ -72,9 +72,7 @@ export const pageQuery = graphql`
       ...Gallery
       html
       frontmatter {
-        title
         template
-        subtitle
         featuredImage
         section1
         section2
