@@ -1,9 +1,9 @@
 ---
 template: ProductsPage
 slug: products
-title: Products Page
+title: 
 featuredImage: 'https://ucarecdn.com/df0dc650-6938-412f-aefb-2019d2349e13/'
-subtitle: This is the products page subtitle.
+subtitle: 
 section1: >-
   ## This is a container home
 
